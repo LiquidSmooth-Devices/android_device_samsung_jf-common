@@ -41,6 +41,13 @@ BOARD_KERNEL_PAGESIZE := 2048
 TARGET_KERNEL_CONFIG := cyanogen_jf_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/jf
 
+# Custom Toolchain Flags
+TARGET_GCC_VERSION_ARM := 4.8-sm
+
+# Liquid Optimizations
+LIQUIFY := true
+LIQUID_CHANGELOG := true
+
 # Audio
 BOARD_HAVE_AUDIENCE_ES325_2MIC := true
 BOARD_HAVE_DOCK_USBAUDIO := true
